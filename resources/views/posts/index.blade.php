@@ -25,6 +25,7 @@
                 <a href="{{ route('users.show', $post->user_id) }}">{{ $post->user->name }}</a>
             </h5>
             <p class="card-text">{{ $post->content }}</p>
+            <img src="{{ asset('storage/image/'.$post->image) }}" alt="">
             <a href="{{ route('posts.show', $post->id) }}" class="btn btn-primary">詳細</a>
           </div>
         </div>

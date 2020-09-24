@@ -24,7 +24,7 @@
 
             <p class="card-text">{{ $post->content }}</p>
 
-            <img src="{{ asset('storage/image'.$post->image) }}">
+            <img src="{{ asset('storage/image/'.$post->image) }}" alt="">
 
         </div>
     </div>
@@ -39,7 +39,6 @@
             by
                 <a href="{{ route('users.show', $comment->user->id )}}">
                 {{ $comment->user->name }}
-
                 </a>
 
             </p>
